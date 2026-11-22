@@ -1,0 +1,8 @@
+# syft 配置：SBOM 只反映交付物，不扫虚拟环境与测试缓存
+exclude:
+  - ./.git/**
+  - ./.venv/**
+  - ./__pycache__/**
+  - ./.pytest_cache/**
+  - ./.mypy_cache/**
+  - ./.ruff_cache/**
